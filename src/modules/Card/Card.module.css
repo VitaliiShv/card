@@ -1,0 +1,114 @@
+.listWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 380px;
+  height: 460px;
+  background-image: url('../../images/bgImage.png'),
+    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+  background-size: 308px 168px, contain;
+  background-position: top 28px left 36px, center;
+  background-repeat: no-repeat;
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+}
+
+.logo {
+  width: 76px;
+  height: 22px;
+}
+
+.userWrapper {
+  position: relative;
+  margin-top: 172px;
+}
+
+.userInner {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 62px;
+  height: 62px;
+  background-color: #5736a3;
+  border-radius: 50%;
+}
+
+.userOuter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #ebd8ff;
+  border-radius: 50%;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
+}
+
+.userPhoto {
+  display: block;
+}
+
+.line {
+  content: '';
+  display: block;
+  margin-left: -20px;
+  width: 380px;
+  height: 8px;
+  background-color: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #ae7be3,
+    inset 0px 3.43693px 2.5777px #fbf8ff;
+}
+
+.options {
+  margin-top: 52px;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: #ebd8ff;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 196px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.button:hover,
+.utton:focus {
+  background-color: #ffffff;
+}
