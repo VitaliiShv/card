@@ -26,7 +26,6 @@ const CardList = () => {
         const index = prevCards.indexOf(id);
         const updatedCards = [...prevCards];
         updatedCards.splice(index, 1);
-        console.log(updatedCards);
         return updatedCards;
       }
 
