@@ -1,0 +1,8 @@
+.listWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,10 +1,10 @@
 import styles from './App.module.css';
-import Card from './modules/Card/Card';
+import CardList from './modules/CardList/CardList';
 
 const App = () => {
   return (
     <div className={styles.container}>
-      <Card />
+      <CardList />
     </div>
   );
 };
