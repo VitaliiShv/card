@@ -7,6 +7,7 @@ import { getAllUsers } from '../../shared/api';
 const CardList = () => {
   const [users, setUsers] = useState([]);
   const [addedCards, setAddedCards] = useState(JSON.parse(localStorage.getItem('addedIds')) || []);
+  const [itemsToShow, setItemsToShow] = useState(3);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -37,11 +38,22 @@ const CardList = () => {
     localStorage.setItem('addedIds', JSON.stringify(addedCards));
   }, [addedCards]);
 
-  const cards = users.map(user => (
-    <Card key={user.id} cardData={user} subscribedCard={addToArray}></Card>
-  ));
+  const loadMore = () => {
+    setItemsToShow(prevItems => prevItems + 3);
+  };
 
-  return <ul className={styles.listWrapper}>{cards}</ul>;
+  const cards = users
+    .slice(0, itemsToShow)
+    .map(user => <Card key={user.id} cardData={user} subscribedCard={addToArray}></Card>);
+
+  return (
+    <>
+      <ul className={styles.listWrapper}>{cards}</ul>
+      <button onClick={loadMore} className={styles.button}>
+        Load More
+      </button>
+    </>
+  );
 };
 
 export default CardList;

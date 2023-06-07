@@ -6,3 +6,34 @@
   margin: 0;
   padding: 0;
 }
+
+.button {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 196px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.button.subscribed {
+  background-color: #5cd3a8;
+}
+
+.button:hover,
+.utton:focus {
+  background-color: #ffffff;
+}
