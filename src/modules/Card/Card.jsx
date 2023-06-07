@@ -11,7 +11,7 @@ const Card = ({ cardData, subscribedCard }) => {
       setIsSubscribed(true);
       setFollowers(cardData.followers + 1);
     }
-  }, []);
+  }, [cardData]);
 
   const subscribe = id => {
     isSubscribed ? setIsSubscribed(false) : setIsSubscribed(true);
